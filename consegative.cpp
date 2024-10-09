@@ -6,8 +6,16 @@ using namespace std;
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-        // Implementation will go here
-        return 0; // Placeholder return
+        vector<int>array;
+        int n=nums.size();
+        for (int i = 0; i < n; i++)
+        {
+            if((array[i]+1)==array[i+1]){
+                array.push_back(array[i]);
+            }
+        }
+        
+        return array.size(); 
     }
 };
 
