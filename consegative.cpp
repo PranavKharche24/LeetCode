@@ -5,17 +5,8 @@ using namespace std;
 
 class Solution {
 public:
-    int longestConsecutive(vector<int>& nums) {
-        vector<int>array;
-        int n=nums.size();
-        for (int i = 0; i < n; i++)
-        {
-            if((array[i]+1)==array[i+1]){
-                array.push_back(array[i]);
-            }
-        }
-        
-        return array.size(); 
+    void nextPermutation(vector<int>& nums) {
+       next_permutation(nums.begin(),nums.end());
     }
 };
 
